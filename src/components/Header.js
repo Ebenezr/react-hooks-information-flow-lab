@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Header=({theme, isDarkMode})=> {
+const Header=({onDarkModeClick, isDarkMode})=> {
     
   return (
     <header>
         <h2>Shopster</h2>
-        <button onClick={theme}>
+        <button onClick={onDarkModeClick}>
           {isDarkMode ? "Dark" : "Light"} Mode
         </button>
     </header>
